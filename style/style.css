@@ -171,3 +171,27 @@ header{
         padding: 0.8rem;
     }
 }
+
+/* Header */
+
+/* Main Content */
+
+.gray-background{
+    background-color: #c7c7c7;
+}
+
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
