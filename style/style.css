@@ -131,7 +131,7 @@ header {
 }
 
 /* Media Queries*/
-@media (max-width: 1000px) {
+@media (max-width: 780px) {
 
     .logo {
         height: 80px;
@@ -155,7 +155,7 @@ header {
     nav {
         position: absolute;
         background-color: #999595;
-        width: 100%;
+        width: 98vh;
         top: 124px;
         display: none;
 
@@ -173,11 +173,33 @@ header {
         text-align: center;
         padding: 0.8rem;
     }
+
+    .cols {
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    .cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .cols img{
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+    
+    }
+
 }
 
 /* Header */
 
 /* Main Content */
+main{
+    background-color: #ebebeb;
+}
+
 
 .gray-background {
     background-color: #00000083;
@@ -199,9 +221,62 @@ header {
     gap: 1.5rem;
 }
 
-.cols img{
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
+.cols-3 img{
+    max-width: 100%;
+
+}
+
+.cols-4 img{
+    max-width: 100%;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover {
+    transform: translateY(-5px);
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background: #E3FC02;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+    
+}
+
+.product{
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+
+.rate{
+    color: aqua;
+    font-size: 1.3rem;
+}
+
+.product-price span{
+    font-weight: 600;
 
 }
