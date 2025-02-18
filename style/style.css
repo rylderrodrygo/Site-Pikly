@@ -8,7 +8,7 @@ body{
 }
 
 .header-inner-content{
-    max-width: 1300px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -127,4 +127,47 @@ header{
 .header-botton-side-right img{
     width: 115%;
     padding: 2rem;
+}
+
+/* Media Queries*/
+@media (max-width: 1000px){
+
+    .logo{
+        height: 80px;
+        width: 200px;
+    }
+    .menu-button{
+        display: block;
+    }
+
+    .header-inner-content{
+        padding: 20px;
+    }
+    .header-botton-side {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav {
+        position: absolute;
+        background-color: #999595;
+        width: 100%;
+        top: 124px;
+        display: none;
+
+    }
+
+    .show-menu nav{
+        display: block;
+    }
+    
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
 }
