@@ -1,35 +1,36 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header-inner-content{
+.header-inner-content {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.nav-bar{
+.nav-bar {
     background-color: #E3FC02;
     position: sticky;
     top: 0;
     box-shadow: 10px 0px 10px #2c2c2c;
     z-index: 99;
     font-weight: bold;
-    
+
 }
 
-.nav-bar>div{
+.nav-bar>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 80px;
 }
@@ -41,65 +42,65 @@ nav ul {
 
 }
 
-.nav-icons-container{
+.nav-icons-container {
     display: flex;
     align-items: center;
 }
 
-.nav-icons-container img{
+.nav-icons-container img {
     width: 30px;
     cursor: pointer;
 }
 
-.nav-icons-container img:first-child{
+.nav-icons-container img:first-child {
     margin-right: 1rem;
 }
 
-nav ul li{
+nav ul li {
     color: rgb(0, 0, 0);
     margin-right: 1.5rem;
     cursor: pointer;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     transform: translateY(-5px);
     transition: all 0.2s;
     font-weight: bold;
 }
 
-.menu-button{
+.menu-button {
     display: none;
 }
 
-header{
-    background-image: radial-gradient(#fff,#c7c7c7) ;
+header {
+    background-image: radial-gradient(#fff, #c7c7c7);
 }
 
-.header-botton-side{
+.header-botton-side {
     display: flex;
     align-items: center;
     justify-self: center;
     padding: 0px 1rem;
 }
 
-.header-botton-side-left{
-    
+.header-botton-side-left {
+
     height: 100%;
     flex-basis: 50%;
 }
 
-.header-botton-side-left h2{
+.header-botton-side-left h2 {
     font-size: 3.2rem;
     margin-bottom: 1.5rem;
 }
 
-.header-botton-side-left p{
+.header-botton-side-left p {
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 19px;
 }
 
-.header-botton-side-left button{
+.header-botton-side-left button {
     background-color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
@@ -111,38 +112,40 @@ header{
     transition: all 0.2;
 }
 
-.header-botton-side-left button:hover{
+.header-botton-side-left button:hover {
     background-color: #E3FC02;
     color: black;
     font-weight: bold;
 }
 
-.header-botton-side-right{
+.header-botton-side-right {
     flex-basis: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header-botton-side-right img{
+.header-botton-side-right img {
     width: 115%;
     padding: 2rem;
 }
 
 /* Media Queries*/
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
-    .logo{
+    .logo {
         height: 80px;
         width: 200px;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
     }
 
-    .header-inner-content{
+    .header-inner-content {
         padding: 20px;
     }
+
     .header-botton-side {
         flex-direction: column;
         text-align: center;
@@ -158,15 +161,15 @@ header{
 
     }
 
-    .show-menu nav{
+    .show-menu nav {
         display: block;
     }
-    
-    nav ul{
+
+    nav ul {
         flex-direction: column;
     }
 
-    nav ul li{
+    nav ul li {
         text-align: center;
         padding: 0.8rem;
     }
@@ -176,22 +179,29 @@ header{
 
 /* Main Content */
 
-.gray-background{
-    background-color: #c7c7c7;
+.gray-background {
+    background-color: #00000083;
 }
 
-.page-inner-content{
+.page-inner-content {
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 0 200px;
 }
 
-.cols{
+.cols {
     display: grid;
-    justify-content: space-evenly;
-    padding: 4rem 1rem;
+    justify-content: space-between;
+    padding: 4rem 0px
 }
 
-.cols-3{
+.cols-3 {
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 1.5rem;
+}
+
+.cols img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+
 }
