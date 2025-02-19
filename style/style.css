@@ -9,9 +9,10 @@ body {
 }
 
 .header-inner-content {
-    max-width: 1200px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    padding: 30px;
 }
 
 .nav-bar {
@@ -28,6 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .logo {
@@ -313,4 +315,5 @@ main {
         max-width: 100%;
         height: auto;
     }
+
 }
