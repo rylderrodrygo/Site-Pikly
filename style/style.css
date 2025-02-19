@@ -185,9 +185,10 @@ header {
     }
 
     .cols img {
-        width: 300px;
-        height: 300px;
+        max-width: 100%;
+        height: auto;
         border-radius: 5px;
+        
 
     }
 
@@ -222,15 +223,15 @@ main {
 }
 
 .cols-3 img {
-    width: 300px;
-    height: 300px;
     border-radius: 10px;
     max-width: 100%;
+    height: auto;
 
 }
 
 .cols-4 img {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -295,12 +296,17 @@ main {
     border-radius: 10px;
 }
 
-@media(max-width:800px){
+@media(max-width:780px){
     .cols-3{
         grid-template-columns: repeat(1, 1fr);
     }
     .cols-4{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .cols-3 img{
+        max-width: 100%;
+        height: auto;
     }
 
     .cols-4 img{
