@@ -143,7 +143,7 @@ header {
     }
 
     .header-inner-content {
-        padding: 20px;
+        padding: 30px;
     }
 
     .header-botton-side {
@@ -293,4 +293,18 @@ main {
 .exclusive-container img {
     max-width: 500px;
     border-radius: 10px;
+}
+
+@media(max-width:800px){
+    .cols-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cols-4{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cols-4 img{
+        max-width: 100%;
+        height: auto;
+    }
 }
